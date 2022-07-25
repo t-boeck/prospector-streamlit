@@ -1,0 +1,9 @@
+
+# Required for deployment on Heroku
+#gunicorn==20.1.0
+
+#analysis
+numpy
+pandas
+yfinance
+plotly
