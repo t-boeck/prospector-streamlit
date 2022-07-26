@@ -7,10 +7,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
-########### Define your variables
-
 #Site parameters
-#tabtitle='$$$'
 st.title('The Prospector')
 ticker = st.text_input(label='Ticker')
 
@@ -26,10 +23,6 @@ try:
 except:
     st.error('Please enter a valid input')
     st.stop()
-
-
-# if data.empty:
-#     st.error('Please enter a valid input')
 
 try:
     data.index = data.index.tz_convert('America/Los_Angeles')
